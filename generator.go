@@ -67,11 +67,9 @@ func main() {
 	fmt.Printf("* Load resources (%v)", len(api.Endpoints))
 	fmt.Println("")
 	for i, endpoint := range api.Endpoints {
-
-		fmt.Printf("::: %v", endpoint.Response)
-
 		resource := relativePath + "input/responses/" + endpoint.Response
 		fmt.Printf("* Resource: %v", resource)
+		fmt.Println("")
 		response, e := ioutil.ReadFile(resource)
 		if e != nil {
 			fmt.Printf("ERROR: File error: %v\n", e)
