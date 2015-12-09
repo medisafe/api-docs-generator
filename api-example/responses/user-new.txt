@@ -1,0 +1,10 @@
+{ 
+    "status": "OK",
+    "code": 200,
+    "data": {
+        "uniqueId": "111222333444",
+        "email": "sromku@gmail.com",
+        "accessToken": "Dl76QpuciLdHKqdg50MD_oJ9amcxQfKB6l",
+        "country": "us"
+    }
+}

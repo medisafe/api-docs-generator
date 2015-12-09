@@ -1,0 +1,80 @@
+{
+  "title" : "API - Sample",
+  "base": {
+    "url": "https://api.sample.com/1.1/",
+    "headers": [
+      {
+        "name": "X-USER-TOKEN",
+        "description": "user access token"
+      },
+      {
+        "name": "X-APP-VERSION",
+        "description": "current app version"
+      }
+    ]
+  },
+  "endpoints": [
+    {
+      "endpoint": "user/new",
+      "title": "User Registration",
+      "description": "New user registration",
+      "method": "POST",
+      "params": [
+        {
+          "name": "uniqueId",
+          "description": "device unique id",
+          "type": "string",
+          "value": null,
+          "must": true,
+          "default": null,
+          "options": null
+        },
+        {
+          "name": "email",
+          "description": "user email account",
+          "type": "string",
+          "value": null,
+          "must": false,
+          "default": null,
+          "options": null
+        },
+        {
+          "name": "lang",
+          "description": "current device language",
+          "type": "string",
+          "value": "xx",
+          "must": false,
+          "default": "en",
+          "options": null
+        },
+        {
+          "name": "gender",
+          "description": "user' gender",
+          "type": "int",
+          "value": null,
+          "must": false,
+          "default": "0",
+          "options": "0,1,2"
+        }
+      ],
+      "response": "user-new.txt",
+      "codes": [
+        {
+          "code": 200,
+          "type": "INFO",
+          "description": "New user was created successfully"
+        },
+        {
+          "code": 201,
+          "type": "INFO",
+          "description": "User already exists and was updated successfully"
+        },
+        {
+          "code": 400,
+          "type": "ERROR",
+          "description": "Missing params"
+        }
+      ]
+    }
+  ]
+}
