@@ -15,4 +15,3 @@ Output looks like this:
 - $1 - source of `api.json` (required)
 - $2 - destination to copy the `api.json` (optional)
 
-[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/Medisafe/api-docs-generator)
